@@ -1,4 +1,4 @@
-# Rainforest-Alliance-Redesign
+RA Site Redesign
 A place for RA's webteam to share code. 
 
 Preview the pages so far: 
