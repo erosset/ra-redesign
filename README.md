@@ -12,3 +12,6 @@ http://htmlpreview.github.io/?https://github.com/erosset/Rainforest-Alliance-Red
 
 Content Hub:<br>
 http://htmlpreview.github.io/?https://github.com/erosset/Rainforest-Alliance-Redesign/blob/master/ui-kit-contenthub.html
+
+Pressroom:<br>
+http://htmlpreview.github.io/?https://github.com/erosset/Rainforest-Alliance-Redesign/blob/master/ui-kit-pressroom.html
