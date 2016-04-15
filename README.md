@@ -11,4 +11,4 @@ Article page:<br>
 http://htmlpreview.github.io/?https://github.com/erosset/Rainforest-Alliance-Redesign/blob/master/ui-kit-article.html
 
 Content Hub:<br>
-http://htmlpreview.github.io/?https://github.com/erosset/Rainforest-Alliance-Redesign/blob/master/ui-kit.html
+http://htmlpreview.github.io/?https://github.com/erosset/Rainforest-Alliance-Redesign/blob/master/ui-kit-contenthub.html
