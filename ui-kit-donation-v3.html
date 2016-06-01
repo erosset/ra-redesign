@@ -1,0 +1,497 @@
+
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Donation Page</title>
+        <link rel="stylesheet" href="http://ericarosset.com/uikit-2.26.2/css/uikit.custom.css" />
+        <link rel="stylesheet" href="http://ericarosset.com/uikit-2.26.2/css/components/sticky.css" />
+      <script src="http://getuikit.com/vendor/jquery.js"></script>
+        <script src="http://ericarosset.com/uikit-2.26.2/js/uikit.min.js"></script>
+        <script src="http://getuikit.com/src/js/components/sticky.js"></script>
+        <script src="http://getuikit.com/src/js/components/accordion.js"></script>
+
+<script>
+    $(document).ready(function() {
+  $('.uk-accordion-title').removeClass('uk-active');
+});
+    </script>
+    <script type="text/javascript">
+        function outputUpdate(vol) {
+    document.querySelector('#volume').value = vol;
+}
+
+function outputUpdate2(vol2) {
+    document.querySelector('#donation').value = vol2;
+}
+    </script>
+
+    <style type="text/css">
+        div.donation-widget button.uk-active {
+             background: #f1735f;
+            color: white;
+        }
+    </style>
+
+    </head>
+
+
+    <body style="background-color:#f5f3f2">
+
+
+
+
+
+<div class="uk-cover-background uk-position-relative" style="height: 510px; background-image: url(http://d3bz0tpj0rzgui.cloudfront.net/assets/55408ce5b41bf67acd8714bb4e2b3099/90982b024e0ec28e1e49376d60114b50/cfcd208495d565ef66e7dff9f98764da/1459201324/heroTypeCast.jpg);">
+
+    <div class="uk-cover-background uk-grid">
+
+
+    <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle ">
+    
+
+
+
+    <!--div class="uk-text-center">
+    <h1 class="uk-article-title ">Attention-grabbing issue </h1>
+    <p class="uk-article-meta uk-contrast">Written by Author on 12 April 2013. Posted in <a href="#">Blog</a></p>
+    </div -->
+
+    <div class="uk-container uk-container-center" style="background:#fff;width:1100px;">
+
+        <div class="uk-width-1-1 uk-container-center uk-text-center">
+                <div class="uk-h2"></div>
+        </div>
+    
+        <div class="uk-grid uk-grid-margin uk-margin uk-text-center" data-uk-margin>
+            <div class="uk-width-medium-1-4" style="background:;width:400px;" data-uk-margin>
+                
+                <div class="uk-panel uk-margin-large uk-margin-top" style="font-size: 2em"><output for="fader" id="volume" class="uk-text-center uk-text-large uk-text-bold"  style="font-size: 2em">25</output> <br>Trees/Acres Saved Image</div>
+                <label for="fader">If you donate $<output for="fader" id="donation">25</output> this is your impact.</label><br>
+                <input type="range" name="grade" orient="vertical"
+  style="width: 200px; height: 20px;
+  -webkit-appearance: slider-horizontal: ;
+  writing-mode: bt-lr;"  min="0" max="1000" value="25" id="fader" step="1" oninput="outputUpdate(value);outputUpdate2(value);" id="fader">
+
+<!-- http://www.heifer.org/gift-catalog/animals-nutrition/gift-of-a-goat-donation.html -->
+
+
+            </div>
+            <div class="uk-width-medium-3-4 uk-margin uk-container-center" style="background:;width: 600px">
+                <form class="uk-form uk-text-center">
+ <h3>Ready to Donate?</h3>
+    <fieldset class="" style=" ">
+        <!-- uk-button-danger --> 
+        
+        <div data-uk-button-radio class="donation-widget">
+            <button class="uk-button" type="button" data-uk-button>$25</button>
+            <button class="uk-button" type="button" data-uk-button>$100</button>
+            <button class="uk-button" type="button" data-uk-button>$250</button>
+            <button class="uk-button" type="button" data-uk-button>$500</button>
+            <button class="uk-button" type="button" data-uk-button>$1000</button>
+            
+            <input type="text" placeholder="Enter Amount">
+
+        </div>
+<br>
+
+        <div class="uk-button-dropdown" style="border:0;" data-uk-dropdown="{mode:'click'}">
+            <button class="uk-button">Change Currency <!--i class="uk-icon-caret-down"></i--></button>
+            <div class="uk-dropdown uk-dropdown-bottom uk-dropdown-width-1" style="top: 30px; left: 0px;">
+                                        <ul class="uk-nav uk-nav-dropdown">
+                                            <li><a href="#">Dollar</a></li>
+                                            <li><a href="#">Euro</a></li>   
+                                            
+                                        </ul>
+                                    </div>
+        </div> 
+        
+        <input type="radio" name="radAnswer" class="uk-margin-right uk-margin-left"><label></label>Monthly</input> <input type="radio" name="radAnswer" class="uk-margin-right uk-margin-left">One-time</input>
+        <button class="uk-button uk-button-primary uk-margin-left">Donate Now</button>  
+    </fieldset>
+
+</form>
+            </div>
+
+
+           
+
+        </div>
+
+
+    </div>
+
+    
+
+
+    
+</div>
+    
+    </div>
+</div>
+
+
+</div>
+
+
+<div data-uk-sticky="{top:-100, animation: 'uk-animation-slide-top'}">
+<nav class="uk-navbar" >
+    <ul class="uk-navbar-nav" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}">
+        <li><a href="#impact" class="">Your Impact</a></li>
+        <li><a href="#work">Ways To Give</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        
+    </ul>
+</nav>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+ <div class="uk-width-medium-1-10 uk-margin-large-top">
+        <div class="uk-sticky-placeholder" style="height: 184px; margin: 0px;">
+            <div class="uk-block uk-block-default  uk-padding-top-remove uk-padding-bottom-remove uk-padding-large-bottom" data-uk-sticky="{top:50}" style="margin: 0px;">
+              <div style="margin-top:20px"></div>
+                <p class="uk-text-small uk-text-muted uk-text-center uk-margin-small-top">SHARE</p>
+                <a href="#" class="uk-icon-button uk-border-rounded uk-icon-facebook uk-margin-small-bottom uk-align-center"></a>
+                <a href="#" class="uk-icon-button uk-border-rounded uk-icon-twitter uk-margin-small-bottom uk-align-center"></a>
+                <a href="#" class="uk-icon-button uk-border-rounded uk-icon-envelope uk-margin-small-bottom uk-align-center"></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<div id="impact" class="uk-container uk-container-center uk-margin-large-top" style="">
+
+
+
+
+<div class="uk-width-1-1 uk-container-center uk-text-center uk-margin-large-bottom uk-margin-large-top">
+           
+        </div>
+    <div class="uk-grid uk-grid-collapse uk-margin-large uk-grid-match" data-uk-grid-match="{target:'.uk-panel'}">
+      <div class="uk-width-medium-1-3 uk-width-small-1-1 ">
+         <div class="uk-panel">
+         <img class="" src="http://placehold.it/400x400" alt="">
+         </div>
+      </div>
+      <div class="uk-width-medium-2-3 uk-width-small-1-1" >
+         <div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-primary">
+         <h3>Your Impact</h3>
+         <p>Cronut biodiesel cardigan hashtag actually tote bag, 21px 70 ch fillfff heirloomadfaff literally fanny pack whatever ugh. Ugh helvetica ffffff echo park, chicharrones DIY meditation mlkshk. Sustainable fffffffffff gastropub tattooed paleo salvia, cliche biodiesel pitchfork. Trustffffff</p>
+         </div>
+        </div>
+     </div>
+
+
+    <div class="uk-grid uk-grid-collapse uk-margin-large uk-grid-match" data-uk-grid-match="{target:'.uk-panel'}">
+      <div class="uk-width-medium-1-3 uk-push-2-3 uk-width-small-1-1 ">
+         <div class="uk-panel">
+         <img class="" src="http://placehold.it/400x400" alt="">
+         </div>
+      </div>
+      <div class="uk-width-medium-2-3 uk-pull-1-3 uk-width-small-1-1" >
+         <div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-primary">
+         <h3>Donut Chart Donation Allocation</h3>
+         <p>Cronut biodiesel cardigan hashtag actually tote bag, 21px 70 ch fillfff heirloomadfaff literally fanny pack whatever ugh. Ugh helvetica ffffff echo park, chicharrones DIY meditation mlkshk. Sustainable fffffffffff gastropub tattooed paleo salvia, cliche biodiesel pitchfork. Trustffffff</p>
+         </div>
+        </div>
+     </div>
+
+<div class="uk-grid uk-grid-collapse uk-margin-large uk-grid-match" data-uk-grid-match="{target:'.uk-panel'}">
+      <div class="uk-width-medium-1-3 uk-width-small-1-1 ">
+         <div class="uk-panel">
+         <img class="" src="http://placehold.it/400x400" alt="">
+         </div>
+      </div>
+      <div class="uk-width-medium-2-3 uk-width-small-1-1" >
+         <div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-primary">
+         <h3>Donor Profile</h3>
+         <p>Cronut biodiesel cardigan hashtag actually tote bag, 21px 70 ch fillfff heirloomadfaff literally fanny pack whatever ugh. Ugh helvetica ffffff echo park, chicharrones DIY meditation mlkshk. Sustainable fffffffffff gastropub tattooed paleo salvia, cliche biodiesel pitchfork. Trustffffff</p>
+         <!-- button class="uk-button uk-button-link">Button link</button --></div>
+        </div>
+     </div>
+
+</div>
+
+
+<!-- WAYS TO GIVE SECTION -->
+
+
+<div style="background-color:#544742">
+
+
+<div class="uk-container uk-container-center" style="width:1100px;">
+   <div id="work" class="uk-width-1-1 uk-container-center uk-text-center uk-margin-large-bottom uk-margin-large-top">
+            <div class="uk-h2  uk-contrast">Ways to Give </div>
+            
+        </div>
+    <div class="uk-grid" style="margin-bottom:93px;">
+    
+    <div class="uk-width-medium-1-3 uk-width-small-1-1 ">
+    	<div class="uk-panel uk-panel-box">
+
+        	<div class="uk-panel-teaser"><img src="http://placehold.it/530x530" width="800" height="280" alt=""></div>
+        	
+        	<div class="uk-panel-box curve">
+            <h4 class="uk-panel-title">Monthly Giving</h4>
+            You will make an important commitment to conservation while giving us the stability to expand our efforts and plan for the future. 
+        </div></div>
+    </div>
+
+    <div class="uk-width-medium-1-3 uk-width-small-1-1 ">
+    	<div class="uk-panel uk-panel-box">
+        	<div class="uk-panel-teaser"><img src="http://placehold.it/530x530" width="800" height="280" alt=""></div>
+        	
+            <div class="uk-panel-box curve">
+            <h4 class="uk-panel-title">One-Time Gift</h4>
+            By donating to the Rainforest Alliance, you'll become a member of a worldwide conservation movement that grows each day. 
+            </div>
+        </div>
+    </div>
+        <div class="uk-width-medium-1-3 uk-width-small-1-1 ">
+    	<div class="uk-panel uk-panel-box">
+        	<div class="uk-panel-teaser"><img src="http://placehold.it/530x530" width="800" height="280" alt=""></div>
+        	
+        	<div class="uk-panel-box curve">
+            <h4 class="uk-panel-title">Canopy Associates</h4>
+            Contribute $1,000 or more and join a group whose support has a significant impact on ecosystems and communities around the world.
+        </div></div>
+    </div>
+</div>
+</div>
+
+<div class="uk-container uk-container-center" style="width:1100px;margin-top: 50px;">
+    <div id="work" class="uk-width-1-1 uk-container-center uk-text-center uk-margin-large-bottom uk-margin-large-top">
+            <div class="uk-h2  uk-contrast">Other Ways to Give </div>
+            
+        </div>
+    <div class="uk-grid" data-uk-margin>
+        
+        <div class="uk-width-medium-1-2">
+            <div class="uk-accordion" data-uk-accordion="{showfirst: false}">
+                <h3 class="uk-accordion-title" style="margin-bottom: 0">Honor Gifts</h3>
+                <div class="uk-accordion-content" style="background: white;">
+                    <p class="uk-margin-top uk-margin-right uk-margin-left">Whether it’s a tribute to the memory of a loved one or in celebration of a special occasion, your gift to the Rainforest Alliance is a thoughtful way to honor others and protect the planet.</p>
+                    <button class="uk-button uk-button-link uk-margin-left">Learn More</button>
+                </div>
+                <h3 class="uk-accordion-title" style="border-top: solid 1px white; margin-bottom: 0">Personal Fundraising</h3>
+                <div class="uk-accordion-content" style="background: white;">
+                    <p class="uk-margin-top uk-margin-right uk-margin-left">Become a sustainable hero and turn parties, walk-a-thons and other special moments into conservation drives. Build your own personal fundraising page, set a goal, and invite friends and family to donate to a great cause.</p>
+                    <button class="uk-button uk-button-link uk-margin-left">Learn More</button>
+                </div>
+                <h3 class="uk-accordion-title" style="border-top: solid 1px white; margin-bottom: 0">Stock</h3>
+                <div class="uk-accordion-content" style="background: white;">
+                    <p class="uk-margin-top uk-margin-right uk-margin-left">Making a stock donation is an efficient and impactful way to support the Rainforest Alliance. You’ll be investing in the success of sustainable communities that are making global markets greener.</p>
+                    <button class="uk-button uk-button-link uk-margin-left">Learn More</button>
+                </div>
+                <h3 class="uk-accordion-title" style="border-top: solid 1px white; margin-bottom: 0">Estate Planning</h3>
+                <div class="uk-accordion-content" style="background: white;">
+                    <p class="uk-margin-top uk-margin-right uk-margin-left">A planned gift is a wonderful way to ensure the longevity of the Rainforest Alliance’s work. Help safeguard the earth’s treasures for future generations while arranging your own environmental legacy.</p>
+                    <button class="uk-button uk-button-link uk-margin-left">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="uk-width-1-2">
+            <div class="uk-accordion" data-uk-accordion="{showfirst: false}">
+                <h3 class="uk-accordion-title" style="margin-bottom: 0">Corporate Donations</h3>
+                <div class="uk-accordion-content" style="background: white;">
+                    <p class="uk-margin-top uk-margin-right uk-margin-left">The Rainforest Alliance gives corporations the chance to become more sustainable. Now, your company can give back through grants, sponsorship or cause marketing, workplace giving and more.</p>
+                    <button class="uk-button uk-button-link uk-margin-left">Learn more</button>
+                </div>
+                <h3 class="uk-accordion-title" style="border-top: solid 1px white; margin-bottom: 0">Events</h3>
+                <div class="uk-accordion-content" style="background: white;">
+                    <p class="uk-margin-top uk-margin-right uk-margin-left">From celebrity-studded galas honoring champions of conservation to adventurous Kenyan eco-trips, the Rainforest Alliance holds a number of events that help you support our work while making indelible memories.</p>
+                    <button class="uk-button uk-button-link uk-margin-left">Learn More</button>
+                </div>
+                <h3 class="uk-accordion-title" style="border-top: solid 1px white; margin-bottom: 0">Robert W. Wilson Innovation Fund</h3>
+                <div class="uk-accordion-content" style="background: white;">
+                    <p class="uk-margin-top uk-margin-right uk-margin-left">This fund enables the Rainforest Alliance to pursue new opportunities in sustainability that are inextricably linked to the preservation of biodiversity and improvement of farmer and forester livelihoods.</p>
+                    <button class="uk-button uk-button-link uk-margin-left">Learn More</button>
+                </div>
+                <h3 class="uk-accordion-title" style="border-top: solid 1px white; margin-bottom: 0">Mail Your Gift</h3>
+                <div class="uk-accordion-content" style="background: white;">
+                    <p class="uk-margin-top uk-margin-right uk-margin-left">If you prefer to mail your gift, please send our printable form to: Rainforest Alliance; 233 Broadway; 28th Floor New York, NY 10279. For questions or comments, please send an email to development@ra.org or call us directly, (888) MY-EARTH or 1-212-677-1900.</p>
+                    <button class="uk-button uk-button-link uk-margin-left">Download form</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<div class="uk-container uk-container-center uk-margin-large">
+    <div class="uk-grid uk-grid-collapse uk-margin-large uk-grid-match" data-uk-grid-match="{target:'.uk-panel'}">
+      <div class="uk-width-medium-1-3 uk-width-small-1-1 ">
+         <div class="uk-panel">
+         <img class="" src="http://placehold.it/400x400" alt="">
+         </div>
+      </div>
+      <div class="uk-width-medium-2-3 uk-width-small-1-1" >
+         <div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-primary">
+         <h3>Did You Know?</h3>
+         <p>Cronut biodiesel cardigan hashtag actually tote bag, 21px 70 ch fillfff heirloomadfaff literally fanny pack whatever ugh. Ugh helvetica ffffff echo park, chicharrones DIY meditation mlkshk. Sustainable fffffffffff gastropub tattooed paleo salvia, cliche biodiesel pitchfork. Trustffffff</p>
+         <button class="uk-button uk-button-link">Button link</button></div>
+        </div>
+     </div>
+
+    <div class="uk-grid uk-grid-collapse uk-margin-large uk-grid-match" data-uk-grid-match="{target:'.uk-panel'}">
+      <div class="uk-width-medium-1-3 uk-push-2-3 uk-width-small-1-1 ">
+         <div class="uk-panel">
+         <img class="" src="http://placehold.it/400x400" alt="">
+         </div>
+      </div>
+      <div class="uk-width-medium-2-3 uk-pull-1-3 uk-width-small-1-1" >
+         <div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-primary">
+         <h3>Thank You!</h3>
+         <p>Cronut biodiesel cardigan hashtag actually tote bag, 21px 70 ch fillfff heirloomadfaff literally fanny pack whatever ugh. Ugh helvetica ffffff echo park, chicharrones DIY meditation mlkshk. Sustainable fffffffffff gastropub tattooed paleo salvia, cliche biodiesel pitchfork. Trustffffff</p>
+         <button class="uk-button uk-button-link">Button link</button></div>
+        </div>
+     </div>
+
+</div>
+
+
+
+</div></div>
+
+<!-- FAQS -->
+
+
+<div class="uk-container uk-container-center" style="width:1100px;">
+
+<div id="faq" class="uk-width-1-1 uk-container-center uk-text-center">
+        <div class="uk-h2" style="margin-bottom: 30px;">FAQ</div>
+</div>
+    
+    <div class="uk-grid" data-uk-margin>
+        
+        <div class="uk-width-medium-1-1">
+            <div class="uk-accordion" data-uk-accordion="{showfirst: false}">
+                <h3 class="uk-accordion-title">Where does my money go?</h3>
+                <div class="uk-accordion-content">
+                    <p>Answer</p>
+                </div>
+                <h3 class="uk-accordion-title">Is my donation tax-deductible?</h3>
+                <div class="uk-accordion-content">
+                    <p>Answer</p>
+                </div>
+                <h3 class="uk-accordion-title">I have questions that I don't see answered here. Who can I contact?</h3>
+                <div class="uk-accordion-content">
+                    <p>Answer</p>
+                </div>
+            </div>
+        </div>
+
+
+       
+
+    </div>
+
+
+</div>
+
+
+
+
+<div class="uk-container uk-container-center uk-margin-large-top">
+    <div class="uk-grid uk-grid-collapse uk-margin-large uk-grid-match" data-uk-grid-match="{target:'.uk-panel'}">
+      <div class="uk-width-medium-1-3 uk-width-small-1-1 ">
+         <div class="uk-panel">
+         <img class="" src="http://placehold.it/400x400" alt="">
+         </div>
+      </div>
+      <div class="uk-width-medium-2-3 uk-width-small-1-1" >
+         <div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-primary">
+         <h3 class="uk-margin-large-bottom">Please Consider Donating Today!</h3>
+         <form class="uk-form uk-margin-top">
+         <fieldset class="" style="border: 0 ">
+        <!-- uk-button-danger --> 
+        
+        <div data-uk-button-radio class="donation-widget">
+            <button class="uk-button" type="button" data-uk-button>$25</button>
+            <button class="uk-button" type="button" data-uk-button>$100</button>
+            <button class="uk-button" type="button" data-uk-button>$250</button>
+            <button class="uk-button" type="button" data-uk-button>$500</button>
+            <button class="uk-button" type="button" data-uk-button>$1000</button>
+            
+            <input type="text" placeholder="Enter Amount">
+
+        </div>
+<br>
+
+        <div class="uk-button-dropdown" style="border:0;" data-uk-dropdown="{mode:'click'}">
+            <button class="uk-button">Change Currency <!--i class="uk-icon-caret-down"></i--></button>
+            <div class="uk-dropdown uk-dropdown-bottom uk-dropdown-width-1" style="top: 30px; left: 0px;">
+                                        <ul class="uk-nav uk-nav-dropdown">
+                                            <li><a href="#">Dollar</a></li>
+                                            <li><a href="#">Euro</a></li>   
+                                            
+                                        </ul>
+                                    </div>
+        </div> 
+        
+        <input type="radio" name="radAnswer" class="uk-margin-right uk-margin-left"><label></label>Monthly</input> <input type="radio" name="radAnswer" class="uk-margin-right uk-margin-left">One-time</input>
+        <button class="uk-button uk-button-primary uk-margin-left">Donate Now</button>  
+    </fieldset>
+
+</form></div>
+        </div>
+     </div>
+
+
+    
+</div>
+
+
+
+
+
+
+
+<div class="uk-container uk-container-center" style="width:1100px;">
+<div class="uk-width-1-1 uk-text-center">
+<div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-secondary uk-margin-large-top uk-margin-large-bottom" style="border-radius:10px;">
+ <form class="uk-form">
+ <h3>Stay up to date with the Rainforest Alliance</h3>
+    <fieldset data-uk-margin>
+        <input type="text" placeholder="Email Address">
+        <button class="uk-button uk-button-success">Subscribe</button>  
+    </fieldset>
+
+</form>
+     </div>
+</div>
+</div>
+
+<div class="uk-container uk-container-center" style="width:1100px;">
+<div class="uk-width-1-1 uk-text-center">
+<div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-secondary uk-margin-large-top uk-margin-large-bottom" style="border-radius:10px;">
+<p>Learn how we are achieving our mission <a href="#">view our approach</a></p>
+     </div>
+</div>
+</div>
+
+    
+</div>
+</div>
+    </body>
+</html>
