@@ -20,13 +20,14 @@ a:hover {
 }
 a,
 .uk-link {
-  color: #f1735f;
-  text-decoration: none;
+  color: #544742;
+  text-decoration: underline;
   cursor: pointer;
+
 }
 a:hover,
 .uk-link:hover {
-  color: #cb333b;
+  color: #877A75;
   text-decoration: underline;
 }
 abbr[title] {
@@ -991,8 +992,7 @@ iframe {
 .uk-panel-title {
   margin-top: 0;
   margin-bottom: 15px;
-  font-size: 27px;
-  line-height: 36px;
+  line-height: 30px;
   font-weight: 300;
   text-transform: none;
   color: #544742;
@@ -1004,23 +1004,69 @@ iframe {
   z-index: 1;
 }
 .uk-panel-teaser {
-  margin-bottom: 15px;
+  margin-bottom: 0px;
+}
+/*.uk-panel-teaser img {
+  position:relative;
+  z-index: -1;*/
+
 }
 .uk-panel-body {
   padding: 15px;
 }
 .uk-panel-box {
   padding: 15px;
-  background-color: #f1735f;
+  background-color: inherit;
   color: #fdfdfd;
-
 }
+
+.curve {
+  position: absolute;
+  top: 228px;
+  left:0;
+  /*background: url("http://ericarosset.com/uikit-2.26.2/curve.svg");*/
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size:340px 202px;
+    display: inline-block;
+  -webkit-mask: url(http://ericarosset.com/uikit-2.26.2/curve.svg) no-repeat 50% 50%;
+  mask: url(http://ericarosset.com/uikit-2.26.2/curve.svg) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color:#f1735f;
+  height:179px;
+  padding-right:30px;
+}
+
 .uk-panel-box-hover:hover {
   color: #544742;
 }
 .uk-panel-box .uk-panel-title {
-  color: #544742;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 30px;
+
 }
+.uk-panel-box .uk-panel-profile {
+  color: #544742;
+  text-transform: inherit;
+  font-family:arvo;
+  line-height: 30px;
+
+}
+.uk-panel-box .uk-panel-profile a {
+  color: #f1735f;
+  text-decoration:none;
+}
+.uk-panel-box .curve  {
+  line-height: 25px;
+}
+
+.profile {
+  line-height: 25px;
+}
+
+
 .uk-panel-box .uk-panel-badge {
   top: 10px;
   left: 10px;
@@ -1043,7 +1089,20 @@ iframe {
   color: #fdfdfd;
 }
 .uk-panel-box-primary .uk-panel-title {
-  color: #ffffff;
+  color: #544742;
+}
+.uk-panel-box-inline {
+  background: inherit;
+  color: #544742;
+  border-bottom: 1px solid #f1735f;
+  border-top: 1px solid #f1735f;
+  padding:15px;
+}
+.uk-panel-box-inline-hover:hover {
+  color: #fdfdfd;
+}
+.uk-panel-box-inline .uk-panel-title {
+  color: #544742;
 }
 .uk-panel-box-secondary {
   background-color: rgba(83, 146, 203, 0.28);
@@ -2176,8 +2235,10 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   max-width: 100%;
   padding: 4px 6px;
   border: 1px solid #dddddd;
-  background: #f5f3f2;
+  border-radius: 10px;
+  background: #ffffff;
   color: #544742;
+  font-style:italic;
   -webkit-transition: all linear 0.2s;
   transition: all linear 0.2s;
 }
@@ -2408,7 +2469,7 @@ select.uk-form-width-mini {
   font-size: 18px;
   text-decoration: none;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 .uk-button:not(:disabled) {
   cursor: pointer;
@@ -2431,12 +2492,12 @@ select.uk-form-width-mini {
 }
 .uk-button-primary:hover,
 .uk-button-primary:focus {
-  background-color: #35b3ee;
+  background-color: #FE666E;
   color: #ffffff;
 }
 .uk-button-primary:active,
 .uk-button-primary.uk-active {
-  background-color: #0091ca;
+  background-color: #cb333b;
   color: #ffffff;
 }
 .uk-button-success {
@@ -2445,27 +2506,50 @@ select.uk-form-width-mini {
 }
 .uk-button-success:hover,
 .uk-button-success:focus {
-  background-color: #8ec73b;
+  background-color: #FFA692;
   color: #ffffff;
 }
+
 .uk-button-success:active,
 .uk-button-success.uk-active {
-  background-color: #72ae41;
+  background-color: #f1735f;
   color: #ffffff;
 }
+
+.uk-button-dropdown {
+  background-color: #ffffff;
+  color: #544742;
+  font-style:italic;
+  border: 1px solid #d9d9d6;
+}
+.uk-button-dropdown:hover,
+.uk-button-dropdown:focus {
+  background-color: #ffffff;
+  color: #544742;
+}
+
+.uk-button-dropdown:active,
+.uk-button-dropdown.uk-active {
+  background-color: #ffffff;
+  color: #544742;
+}
+
 .uk-button-danger {
-  background-color: #544742;
-  color: #ffffff;
+  background-color: inherit;
+  border: 2px solid #544742;
+  color: #544742;
 }
 .uk-button-danger:hover,
 .uk-button-danger:focus {
-  background-color: #e4354f;
-  color: #ffffff;
+  background-color: inherit;
+  border: 2px solid #877A75;
+  color: #877A75;
 }
 .uk-button-danger:active,
 .uk-button-danger.uk-active {
-  background-color: #c91032;
-  color: #ffffff;
+  background-color: inherit;
+  border: 2px solid #544742;
+  color: #544742;
 }
 .uk-button:disabled {
   background-color: #f5f5f5;
@@ -2482,6 +2566,9 @@ select.uk-form-width-mini {
 }
 .uk-button-link {
   color: #f1735f;
+  border:2px solid #f1735f; 
+  border-radius:10px;
+
 }
 .uk-button-link:hover,
 .uk-button-link:focus,
@@ -2534,7 +2621,7 @@ select.uk-form-width-mini {
 }
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.woff2") format('woff2'), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype");
+  src: url("http://ericarosset.com/uikit-2.26.2/fonts/fontawesome-webfont.woff2") format('woff2'), url("http://ericarosset.com/uikit-2.26.2/fonts/fontawesome-webfont.woff") format("woff"), url("http://ericarosset.com/uikit-2.26.2/fonts/fontawesome-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -5515,7 +5602,9 @@ a.uk-thumbnail:focus {
 }
 .uk-dropdown {
   padding: 15px;
-  background: #f5f5f5;
+  background: #ffffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   color: #544742;
   font-size: 18px;
   vertical-align: top;
