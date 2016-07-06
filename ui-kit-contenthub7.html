@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Documentation layout example - UIkit documentation</title>
+        <link rel="stylesheet" href="http://ericarosset.com/uikit-2.26.2/css/uikit.custom.css" />
+        <link rel="stylesheet" href="http://ericarosset.com/uikit-2.26.2/css/components/sticky.css" />
+        <script src="http://getuikit.com/vendor/jquery.js"></script>
+        <script src="http://ericarosset.com/uikit-2.26.2/js/uikit.min.js"></script>
+        <script src="http://getuikit.com/src/js/components/sticky.js"></script>
+                <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>        
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic,300,300italic' rel='stylesheet' type='text/css'>     
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+<style>
+
+body { 
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)),url('http://www.ericarosset.com/uikit-2.26.2/images/contenthub-forests-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-height:1000px;
+    background-repeat: repeat;
+}
+
+
+
+
+/* STICKY NAV */
+.uk-navbar-nav > li.uk-active > a:after{
+    font-family: FontAwesome;
+    content: "\f0d7";
+    display: block;
+    font-size: 100px;
+    color: #4d917b;
+    text-align: center;
+    width: 100%;
+    margin-top: -30px;
+    -o-transition:all .3s ease-in-out;
+    -ms-transition:all .3s ease-in-out;
+    -moz-transition:all .3s ease-in-out;
+    -webkit-transition:all .3s ease-in-out;
+    transition:all .3s ease-in-out;
+}
+.uk-navbar-nav > li > a {
+    -o-transition:all .3s ease-in-out;
+    -ms-transition:all .3s ease-in-out;
+    -moz-transition:all .3s ease-in-out;
+    -webkit-transition:all .3s ease-in-out;
+     transition:all .3s ease-in-out;
+     padding:0 70px;
+}
+.uk-navbar-nav > li.uk-active > a:hover, 
+.uk-navbar-nav > li.uk-active {
+    background-color:#4d917b;
+    border-bottom-width: 1px; 
+    border-bottom-style: solid; 
+    border-bottom-color: #4d917b; 
+}
+
+.uk-navbar-nav > li {
+    border-bottom-width: 1px; 
+    border-bottom-style: solid; 
+    border-bottom-color: #d9d9d6; 
+}
+.uk-navbar-nav > li > a:hover {
+    background-color:#dbe9e4;
+}
+
+
+
+.uk-navbar {
+    background: #ffffff;
+    color: #544742;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity:.97;
+    
+}
+.uk-navbar-nav {
+    list-style: none;
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+/*
+uk-sticky-placeholder {
+    height:75px !important;
+    background:#fff;
+    margin:0;
+    width:100%;
+}
+*/
+
+.uk-navbar-center {
+    max-width: 85%;
+}
+
+
+/*
+
+margin: 0px; 
+background:#ffffff;
+opacity:.97;
+*/
+
+
+.curve {
+    position: absolute;
+    top: 222px;
+    left: 0;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 340px 202px;
+    display: inline-block;
+    -webkit-mask: url(http://ericarosset.com/uikit-2.26.2/curve.svg) no-repeat 50% 50%;
+    mask: url(http://ericarosset.com/uikit-2.26.2/curve.svg) no-repeat 50% 50%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: #f1735f;
+    height: 203px;
+    width: 273px;
+    padding-right: 32px;
+}
+.uk-text-small {
+    font-size: 16px;
+    line-height: 22px;
+}
+.curve .uk-article-meta {
+    font-size: 14px;
+    line-height: 18px;
+    color: #a5a5a0;
+}
+.uk-panel-box .uk-panel-title {
+    padding-top:10px;
+}
+.uk-panel-box .uk-panel-badge {
+    top: 202px;
+    left: 0px;
+}
+.uk-badge {
+    padding:7px;
+}
+
+.uk-contrast  {
+  text-shadow:#000000 0em 0em .1em;
+}
+
+/* HIGHLIGHT BOX */
+
+div.uk-panel.uk-panel-box.highlight div.uk-panel-box.curve.highlight, 
+div.uk-panel.uk-panel-box.highlight img {
+    background-color:#f1735f; 
+    color:#ffffff; 
+    text-decoration:none;
+    -o-transition:all .3s ease-in-out;
+    -ms-transition:all .3s ease-in-out;
+    -moz-transition:all .3s ease-in-out;
+    -webkit-transition:all .3s ease-in-out;
+    transition:all .3s ease-in-out;
+}
+div.uk-panel.uk-panel-box.highlight div.uk-panel-box.curve.highlight:hover  { 
+    background-color:#f49383 !important; 
+    text-decoration:none; 
+    color:#fff;
+}
+div.uk-panel.uk-panel-box.highlight img:hover {
+    opacity: .8;
+    background-color:#544742;
+}
+
+/* LATEST & RELATED BOX */   
+
+div.uk-panel.uk-panel-box.latest div.uk-panel-box.curve.latest, 
+div.uk-panel.uk-panel-box.latest img {
+    background: #ffffff;
+    border-bottom: 3px solid #d9d9d6; 
+    margin-bottom:50px;
+    opacity: 1;
+  -o-transition:all .3s ease-in-out;
+  -ms-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -webkit-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+}
+div.uk-panel.uk-panel-box.latest div.uk-panel-box.curve.latest:hover {
+    background-color:#faf9f8!important;  
+    border-bottom: 3px solid #f49383; 
+    text-decoration:none; 
+    color:#f1735f;
+}
+div.uk-panel.uk-panel-box.latest img:hover {
+    opacity: .8;
+    background-color:#544742;
+}
+
+div.uk-panel.uk-panel-box.latest .uk-text-small {
+    color: #544742;
+}
+div.uk-panel.uk-panel-box.latest .uk-panel-title,
+div.uk-panel-box.curve.latest.related p.uk-text-small {
+    color: #f1735f;
+    text-transform: none;
+}  
+div.uk-panel-box.curve.latest.related {
+    width: 217px;
+    height: 142px;
+    top: 174px;
+}
+
+
+/* Contexualized SMALL CTAs */   
+
+div.uk-panel-box-primary.small  {
+    background: #ffffff;
+    border-bottom: 3px solid #d9d9d6; 
+    opacity: 1;
+  -o-transition:all .3s ease-in-out;
+  -ms-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -webkit-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+}
+div.uk-panel-box-primary.small:hover {
+    background-color:#faf9f8!important;  
+    border-bottom: 3px solid #f49383; 
+    text-decoration:none !important; 
+    color:#f1735f;
+}
+div.uk-panel.uk-panel-box.small img:hover {
+    opacity: .8;
+    background-color:#544742;
+}
+
+div.uk-panel.uk-panel-box.small .uk-text-small {
+    color: #544742;
+}
+div.uk-panel.uk-panel-box.small .uk-panel-title {
+    color: #f1735f;
+    text-transform: none;
+}  
+
+
+
+/* Contexualized LARGE CTA */
+
+.ctaLarge {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("http://www.ericarosset.com/uikit-2.26.2/images/contenthub-forests-involved-3.jpg");
+    background-size: 159%;
+    background-position: top;
+    background-repeat: no-repeat;
+    width:477px;
+    height:326px;
+    position:inherit;
+}
+.inner {
+    background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background-size: 160%;
+}
+
+.ctaLarge .uk-panel-space {
+    padding:80px 80px 50px 20px;
+}
+
+.ctaLarge .uk-article-title {
+  font-size: 37px;
+  line-height: 47px;
+}
+
+/* issue hub thumbnails */   
+
+.uk-overlay-panel {
+   background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
+      opacity: 1;
+  -o-transition:all .3s ease-in-out;
+  -ms-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -webkit-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+}
+
+.uk-overlay-panel:hover {
+    opacity: .8;
+    text-transform: none !important;
+}
+
+
+.uk-overlay-panel h4:hover {
+    opacity: 1;
+    
+}
+
+
+/* Triangle cut out element */
+
+#cut, #cut2 {
+    position: relative;
+    overflow: hidden;
+}
+#cut:before {
+    content:"";
+    position: absolute;
+    left: -15px;
+    width: 50%;
+    height: 40px;
+    top: 0px;
+    background-color: #544742;
+    -webkit-transform: skew(-40deg);
+    -moz-transform: skew(-40deg);
+    -o-transform: skew(-40deg);
+    -ms-transform: skew(-40deg);
+    transform: skew(40deg);
+}
+#cut:after {
+    content:"";
+    position: absolute;
+    right: -15px;
+    width: 50%;
+    height: 40px;
+    top: 0px;
+    background-color: #544742;
+    -webkit-transform: skew(40deg);
+    -moz-transform: skew(40deg);
+    -o-transform: skew(40deg);
+    -ms-transform: skew(40deg);
+    transform: skew(-40deg);
+}
+
+#cut2:before {
+    content:"";
+    position: absolute;
+    left: -15px;
+    width: 50%;
+    height: 40px;
+    top: 0px;
+    background-color: #f5f3f2;
+    -webkit-transform: skew(-40deg);
+    -moz-transform: skew(-40deg);
+    -o-transform: skew(-40deg);
+    -ms-transform: skew(-40deg);
+    transform: skew(40deg);
+}
+#cut2:after {
+    content:"";
+    position: absolute;
+    right: -15px;
+    width: 50%;
+    height: 40px;
+    top: 0px;
+    background-color: #f5f3f2;
+    -webkit-transform: skew(40deg);
+    -moz-transform: skew(40deg);
+    -o-transform: skew(40deg);
+    -ms-transform: skew(40deg);
+    transform: skew(-40deg);
+}
+
+
+
+</style>
+    </head>
+
+
+
+<body style="background-color:#f5f3f2">
+
+<div class="uk-cover-background uk-position-relative" style="height: 510px;">
+    <div class="uk-cover-background uk-grid">
+        <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-contrast ">
+            <div class="uk-text-center">
+                <p class="uk-article-meta uk-contrast">HUMAN RIGHTS</a></p>
+                <h1 class="uk-article-title ">Attention-grabbing issue<br>headline goes here</h1>
+                <h2><a href="#"><i class="uk-icon-play-circle uk-icon-large"></i></a></h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!--  <div data-uk-sticky="{top:, animation: 'uk-animation-slide-top'}" class="uk-sticky-init" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #d9d9d6; margin: 0px; background:#ffffff;opacity:.97;">-->
+
+
+<div class="uk-sticky-placeholder" style="height:75px;">
+<div data-uk-sticky="{top:, animation: 'uk-animation-slide-top'}" class="uk-sticky-init" style="height: auto; margin: 0px;">
+<nav class="uk-navbar">
+    <div class="uk-navbar-center">
+    <ul class="uk-navbar-nav" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}">
+        <li class=""><a href="#stake">What's at Stake</a></li>
+        <li class=""><a href="#work">Our Work</a></li>
+        <li class=""><a href="#impact">Our Impact</a></li>
+        <li><a href="#involved">Get Involved</a></li>
+    </ul>
+    </div>
+</nav>
+</div></div>
+
+
+<div style="background-color:#f5f3f2;">
+  <div class="uk-container uk-container-center" style="width:950px">
+    <div class="uk-grid uk-block uk-margin-small-bottom">
+      <div class="uk-width-1-11 uk-container-center uk-text-center">
+        <div class="uk-h2 uk-margin-large-top">What's at Stake</div>
+          <p class="uk-article-lead uk-margin-large-bottom">Drought. Flood. Shorter growing seasons. Economic insecurity. Famine. For farming and forest communities around the world, the impacts of climate change are already real rather than hypothetical. In today's hyper-connected world, fighting climate change and building resilience to its impact are urgent priorities for us all.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="stake" class="uk-container uk-container-center">
+    <div class="uk-grid uk-grid-collapse uk-margin-large uk-grid-match" data-uk-grid-match="{target:'.uk-panel'}">
+      <div class="uk-width-medium-1-3 uk-width-small-1-1">
+        <div class="uk-panel">
+          <img src="http://www.ericarosset.com/uikit-2.26.2/images/contenthub-forests-stake-1.jpg">
+        </div>
+      </div>
+      <div class="uk-width-medium-2-3 uk-width-small-1-1" >
+        <div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-primary">
+           <h3>Forests: Our Best Defense Against Climate Change</h3>
+           <p>Deforestation and forest degradation account for 20 percent of global greenhouse gas emissions—that's more than the entire global transportation sector and second only to the energy sector. In recognition of this fact, the historic United Nations Paris Climate Agreement of 2015 emphasizes the critical importance of conserving forests, reforesting degraded land, and sustainably managing forests.</p>
+           <!--<button class="uk-button uk-button-link">Button link</button>-->
+        </div>
+      </div>
+    </div>
+
+    <div class="uk-grid uk-grid-collapse uk-margin-large uk-grid-match" data-uk-grid-match="{target:'.uk-panel'}">
+      <div class="uk-width-medium-1-3 uk-push-2-3 uk-width-small-1-1">
+        <div class="uk-panel">
+          <img src="http://www.ericarosset.com/uikit-2.26.2/images/contenthub-forests-stake-2.jpg">
+        </div>
+      </div>
+      <div class="uk-width-medium-2-3 uk-pull-1-3 uk-width-small-1-1" >
+        <div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-primary">
+          <h3>Agriculture and Climate Change</h3>
+          <p>Agriculture is the driver of an estimated 80 percent of tropical deforestation—and farming activities cause an estimated 13 percent of the greenhouse gas emissions that cause global warming. Feeding 9 billion people by 2050 without overwhelming the planet is one of the most urgent challenges of our time.</p>
+          <!--<button class="uk-button uk-button-link">Button link</button>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="uk-container uk-container-center" style="width:950px">
+
+    <div class="uk-grid uk-block">
+      <div class="uk-width-1-1 uk-container-center uk-text-center">
+          <div class="uk-h2 uk-contrast uk-margin-large-top">Our Work in Climate</div>
+        <p class="uk-article-lead uk-contrast uk-margin-large-bottom">The Rainforest Alliance works with rural communities, businesses, and governments around the world to advance climate-smart land management and sustainable economic development through training, carbon project validation/verification, and participation in international climate frameworks like REDD+.</p>
+      </div>
+    </div>
+</div>
+
+
+
+<div id="cut" style="">
+<div style="background-color:#544742;position:relative;top:38px;margin-bottom:36px;">
+<div class="uk-container uk-container-center" style="width:1100px; ">
+<div id="work" class="uk-grid uk-margin-large-top" style="margin-bottom:154px;">
+
+    <div class="uk-width-medium-1-3 uk-width-small-1-1">
+        <div class="uk-panel uk-panel-box highlight">
+            <div class="uk-panel-teaser">
+                <a href="">
+                    <img "width:100%" src="http://www.ericarosset.com/uikit-2.26.2/images/contenthub-forests-work-1.jpg" width="800" height="280" alt="">
+                </a>
+            </div>
+            <a href="#"">
+                <div class="uk-panel-box curve highlight">
+                    <h4 class="uk-panel-title">
+                        Climate-Smart Agriculture 101 <i style="font-size:14px;"class="uk-icon-angle-right" ></i>
+                    </h4>
+                    <div class="uk-text-small">
+                       In our training programs, farmers learn how to decrease greenhouse gas emissions, improve soil health, boost the productivity of their land, and protect forests and wildlife.
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="uk-width-medium-1-3 uk-width-small-1-1">
+        <div class="uk-panel uk-panel-box highlight">
+            <div class="uk-panel-teaser">
+                <a href="">
+                    <img "width:100%" src="http://www.ericarosset.com/uikit-2.26.2/images/contenthub-forests-work-3.jpg" width="800" height="280" alt="">
+                </a>
+            </div>
+            <a href="#"">
+                <div class="uk-panel-box curve highlight">
+                    <h4 class="uk-panel-title">
+                        Forest Communities Earn Revenue for Fighting Climate Change <i style="font-size:14px;"class="uk-icon-angle-right" ></i>
+                    </h4>
+                    <div class="uk-text-small">
+                        By protecting forests and planting trees, communities create "carbon sinks" that help slow climate change. With third-party verification, they can sell carbon credits on the international market.
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="uk-width-medium-1-3 uk-width-small-1-1">
+        <div class="uk-panel uk-panel-box highlight">
+            <div class="uk-panel-teaser">
+                <a href="">
+                    <img "width:100%" src="http://www.ericarosset.com/uikit-2.26.2/images/contenthub-forests-work-2.jpg" width="800" height="280" alt="">
+                </a>
+            </div>
+            <a href="#"">
+                <div class="uk-panel-box curve highlight">
+                    <h4 class="uk-panel-title">
+                        Deforestation and Emissions 101  <i style="font-size:14px;"class="uk-icon-angle-right" ></i>
+                    </h4>
+                    <div class="uk-text-small">
+                        Forests are our most powerful tool for storing carbon. Here's a simple primer on the mechanics of deforestation and carbon sequestration.
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+<!-- HIGHLIGHT TEASER BOX:  END  -->
+
+
+
+
+
+
+
+
+
+
+
+  <div id="stake" class="uk-container uk-container-center">
+    <div class="uk-grid uk-grid-collapse uk-margin-large uk-grid-match" data-uk-grid-match="{target:'.uk-panel'}">
+      
+      <div class="uk-width-medium-1-3 uk-width-small-1-1">
+        <div class="uk-panel">
+          <img src="http://www.ericarosset.com/uikit-2.26.2/images/contenthub-forests-work-4.jpg">
+        </div>
+      </div>
+      <div class="uk-width-medium-2-3 uk-width-small-1-1" >
+        <div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-primary">
+           <h3>Climate-smart coffee farming</h3>
+         <p>A group of Rainforest Alliance Certified™ coffee farmers in Oaxaca, Mexico, have adopted our agroforestry model to restore the health of their land and build resilience to climate change. They're even generating carbon credits for reforesting: the group will likely remove 130,000 tons of emissions from the atmosphere over 30 years—that’s about the equivalent of the annual emissions.</p>
+         <button class="uk-button uk-button-link">Learn More</button></div>
+        </div>
+
+        <div class="uk-1-1 uk-text-center uk-margin-large-top" style="width:100%">
+            <p class="uk-text-small uk-contrast" style="font-family:arvo;text-shadow:none;">
+            <i style="color:#4d917b" class="uk-icon-tree uk-icon-medium"></i></i>&nbsp;&nbsp;&nbsp;Learn more about how we are working to achieve our mission. <a href="" style="text-decoration:underline;">View our approach&nbsp;<i style="font-size:14px;" class="uk-icon-angle-right"></i></a></p>
+        </div>
+
+        
+
+      </div>
+    </div>
+
+
+
+<!--
+<div class="uk-container uk-container-center">
+    <div class="uk-grid uk-grid-collapse uk-margin-large uk-grid-match" data-uk-grid-match="{target:'.uk-panel'}">
+      <div class="uk-width-medium-1-3 uk-width-small-1-1 ">
+         <div class="uk-panel">
+         <img class="" src="http://www.ericarosset.com/uikit-2.26.2/images/contenthub-forests-work-4.jpg" alt="">
+         </div>
+      </div>
+      <div class="uk-width-medium-2-3 uk-width-small-1-1" >
+         <div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-primary">
+         <h3>Climate-smart coffee farming</h3>
+         <p>A group of Rainforest Alliance Certified™ coffee farmers in Oaxaca, Mexico, have adopted our agroforestry model to restore the health of their land and build resilience to climate change. They're even generating carbon credits for reforesting: the group will likely remove 130,000 tons of emissions from the atmosphere over 30 years—that’s about the equivalent of the annual emissions for 27,000 cars.</p>
+         <button class="uk-button uk-button-link">Learn More</button></div>
+        </div>
+     </div></div>
+</div></div>-->
+
+</div>
+
+<div class="" style="background-color:#f5f3f2;">
+<div class="uk-container uk-container-center" style="width:950px">
+
+    <div class="uk-grid uk-block">
+      <div  class="uk-width-1-1 uk-container-center uk-text-center">
+      <div class="uk-h2 uk-margin-large-top">Our Impact</div>
+        <p class="uk-article-lead uk-margin-large-bottom">Our innovative carbon projects give indigenous and forest communities an economic incentive to protect their forests by generating payments for avoiding or removing emissions through forest conservation or reforestation. Our certification division has validated and/or verified carbon projects covering 4.9 million hectares.</p>
+      </div>
+    </div>
+</div>
+
+<div class="uk-container uk-container-center">
+    <div class="uk-grid uk-grid-collapse uk-margin-large uk-grid-match" data-uk-grid-match="{target:'.uk-panel'}">
+      <div class="uk-width-medium-1-3 uk-width-small-1-1 ">
+
+<div style="margin:0;padding:0;">
+<div class="" style="color:#544742;background-color:#dbe9e4;height:;padding-top:25px;padding-left:25px;padding-right:25px;padding-bottom:10px;border: 0px solid #f5f3f2;">
+<img class="uk-display-block uk-container-center" src="http://www.ericarosset.com/uikit-2.26.2/impactmap_forestry.png"> 
+<hr style="color: #4d917b; background-color: #4d917b; border: 2px solid;">
+<h3 style="font-family:arvo; margin:0;">84,220 students </h3>
+<p class="uk-text-small">worldwide have studied our environmental curriculum</p>
+<i id="impact" style="padding-top:52px" class="uk-icon-info-circle " data-uk-tooltip=""></i></div></div>
+
+
+      </div>
+      <div class="uk-width-medium-2-3 uk-width-small-1-1" >
+         <div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-primary">
+         <h3>Subheading</h3>
+         <p>More than 84,000 students worldwide have studied our climate and environmental curriculum. We've trained 5,700 teachers to adapt the curriculum for use in their classrooms, and almost 3.5 million people have visited our website to view and use the curriculum.</p>
+         <button class="uk-button uk-button-link">See More Impacts</button></div>
+        </div>
+     </div>
+
+
+    <div class="uk-grid uk-grid-collapse uk-margin-large uk-grid-match" data-uk-grid-match="{target:'.uk-panel'}">
+      <div class="uk-width-medium-1-3 uk-push-2-3 uk-width-small-1-1 ">
+
+<div style="margin:0;padding:0;">
+<div class="" style="color:#544742;background-color:#dbe9e4;height:;padding-top:25px;padding-left:25px;padding-right:25px;padding-bottom:10px;border: 0px solid #f5f3f2;">
+<img class="uk-display-block uk-container-center" src="http://www.ericarosset.com/uikit-2.26.2/impactmap_forestry.png"> 
+<hr style="color: #4d917b; background-color: #4d917b; border: 2px solid;">
+<h3 style="font-family:arvo; margin:0;">7,173,000 cars</h3>
+<p class="uk-text-small">equivalent annual emissions of greenhouse gases removed or avoided by projects we verify and validate</p>
+<i style="padding-top:52px" class="uk-icon-info-circle " data-uk-tooltip=""></i></div></div>
+
+
+      </div>
+      <div class="uk-width-medium-2-3 uk-pull-1-3 uk-width-small-1-1" >
+         <div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-primary">
+         <h3>Subheading</h3>
+         <p>The Rainforest Alliance has validated and/or verified 80 forest carbon projects around the world. Through these projects, we have verified the reduction and/or removal of greenhouse gases equal to the emissions from 8,594,803 cars each year.</p>
+         <button class="uk-button uk-button-link">Button link</button></div>
+        </div>
+     </div>
+
+        <div class="uk-1-1 uk-text-center uk-margin-large" style="width:100%">
+            <p class="uk-text-small" style="font-family:arvo;">
+            <i style="color:#4d917b" class="uk-icon-tree uk-icon-medium"></i></i>&nbsp;&nbsp;&nbsp;Learn more ways we are achieving real results. <a href="" style="">View our impact dashboard&nbsp;<i style="font-size:14px;" class="uk-icon-angle-right"></i></a></p>
+        </div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="uk-container uk-container-center" style="width:950px">
+    <div class="uk-grid uk-block">
+        <div  class="uk-width-1-1 uk-container-center uk-text-center">
+         <div class="uk-h2 uk-contrast uk-margin-large-top">Get Involved</div>
+            <p class="uk-article-lead uk-contrast uk-margin-large-bottom">Just a short sentence about how your actions can help save the world. </p>
+        </div>
+    </div>
+</div>
+
+<div id="cut" style="">
+<div style="background-color:#544742;position:relative;top:38px;">
+
+<div class="uk-container uk-container-center uk-grid uk-grid-medium uk-margin-large-bottom">
+        <div class="uk-width-1-2 uk-text-small uk-margin-large-top" style="margin-left:-15px;">
+                <div class="uk-grid uk-grid-collapse">
+                    
+                    <div class="uk-width-medium-1-3">
+                      <a href="#" style="text-decoration:none;">
+                        <div class="uk-panel uk-panel-box small" style="width:93%;">
+                        <div class="uk-panel-teaser">
+                            <img class="" src="http://www.ericarosset.com/uikit-2.26.2/images/contenthub-forests-involved-1.jpg" alt=""></div>
+                        </div>
+                      </a>
+                    </div>        
+                    <div class="uk-width-medium-2-3"> 
+                      
+                        <div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-primary small" style="padding:25px;max-height:145px;">
+                        <a href="#" style="text-decoration:none;">
+                            <h4 class="uk-panel-title">
+                              Help Rebalance Our Planet <i style="font-size:14px;" class="uk-icon-angle-right"></i>
+                            </h4>
+                            <div class="uk-text-small"> 
+                              Rainforests purify air and water and absorb carbon dioxide — that makes them our greatest allies in the fight against climate change.  </div>
+                            </div></a>
+                        </div>
+                      
+                    </div>
+                <div class="uk-grid uk-grid-collapse uk-margin-large-bottom uk-margin-top">
+                   <div class="uk-width-medium-1-3">
+                      <a href="#" style="text-decoration:none;">
+                        <div class="uk-panel uk-panel-box small" style="width:93%;">
+                        <div class="uk-panel-teaser">
+                            <img class="" src="http://www.ericarosset.com/uikit-2.26.2/images/contenthub-forests-involved-2.jpg" alt=""></div>
+                        </div>
+                      </a>
+                    </div>            
+
+                    <div class="uk-width-medium-2-3">
+                   
+                        <div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-primary small" style="padding:25px;max-height:145px;">
+                         <a href="#" style="text-decoration:none;">
+                            <h4 class="uk-panel-title" style="color: #f1735f;text-transform: none;">Pledge to Fight Climate Change <i style="font-size:14px;" class="uk-icon-angle-right"></i></h4>
+                            <p class="uk-text-small">Though the effects of climate change continue to worsen, the world is finally committing to doing something about it. </p>
+                            </div></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="involved" class="uk-width-1-2 uk-contrast uk-margin-large-top">
+                  <div class="uk-panel uk-panel-space uk-panel-box curve ctaLarge">
+                      <h2 class="uk-article-title">2015 was the hottest year on record.</h2>
+                      <p>Will 2016 be even warmer?</p>
+                      <a class="uk-button uk-button-primary">DONATE</a>
+                  </div>
+  </div>
+
+
+</div>
+</div></div>
+
+<div style="background-color:#f5f3f2; margin-top:-15px;">
+<div class="uk-container uk-container-center">
+    <div class="uk-h3 uk-margin-large-top">Related Content</div><hr>
+            <div class="uk-grid uk-grid-medium" style="margin-bottom:93px;">
+
+
+        <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-margin-large-bottom">
+            <a href=""><div class="uk-panel uk-panel-box latest">
+                <div class="uk-panel-teaser"><img style="width:100%" src="https://rafrogblogus.files.wordpress.com/2016/05/mario-hernc3a1ndez-cerc3a1mica-santa-ana-cr-7-e1462892448420.jpg?w=290&h=290&crop=1"alt=""></div>
+                <div class="uk-panel-badge uk-badge uk-badge-danger" style="top: 157px;"><i style="font-size:15px;" class="uk-icon-play-circle-o"></i>&nbsp;&nbsp;VIDEO</div>
+                <div class="uk-panel-box curve latest related">
+                    <p class="uk-text-small uk-margin-top">Essay: Tree, a Really Good Love Story <i style="font-size:14px;" class="uk-icon-angle-right"></i></p>
+                </div>
+            </div></a>
+        </div>
+        <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-margin-large-bottom">
+           <a href=""><div class="uk-panel uk-panel-box latest" >
+                <div class="uk-panel-teaser"><img src="http://placehold.it/640x640" alt=""></div>
+                <div class="uk-panel-badge uk-badge uk-badge-danger" style="top: 157px;"><i style="font-size:14px;"class="uk-icon-align-left" ></i>&nbsp;&nbsp;PRESS RELEASE</div>
+               <div class="uk-panel-box curve latest related">
+                    <p class="uk-text-small uk-margin-top">The Rainforest Alliance Extends Suspension on Resolute Forest Products FSC Certificate <i style="font-size:14px;"class="uk-icon-angle-right" ></i></p>
+                </div>
+            </div></a>
+        </div>
+        <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-margin-large-bottom">
+            <a href=""><div class="uk-panel uk-panel-box latest">
+                <div class="uk-panel-teaser"><img src="http://placehold.it/640x640" alt=""></div>
+                <div class="uk-panel-badge uk-badge uk-badge-danger" style="top: 157px;"><i style="font-size:14px;"class="uk-icon-align-left" ></i>&nbsp;&nbsp;IMPACTS REPORT</div>
+                <div class="uk-panel-box curve latest related">
+                    <p class="uk-text-small uk-margin-top">Unlocking Investment for Landscape Restoration at Scale in the Amazon <i style="font-size:14px;"class="uk-icon-angle-right" ></i></p>
+                </div>
+            </div></a>
+        </div>
+        <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-margin-large-bottom">
+            <a href=""><div class="uk-panel uk-panel-box latest" >
+                <div class="uk-panel-teaser"><img src="http://placehold.it/640x640" alt=""></div>
+                <div class="uk-panel-badge uk-badge uk-badge-danger" style="top: 157px;"><i style="font-size:14px;"class="uk-icon-align-left" ></i>&nbsp;&nbsp;IMPACTS REPORT</div>
+                <div class="uk-panel-box curve latest related">
+                    <p class="uk-text-small uk-margin-top">Unlocking Investment for Landscape Restoration at Scale in the Amazon <i style="font-size:14px;"class="uk-icon-angle-right" ></i></p>
+                </div>
+            </div></a>
+        </div>
+
+
+<div class="uk-container uk-container-center">
+   <div class="uk-h3 uk-margin-top">Explore Another Issue</div><hr>
+            <div class="uk-grid uk-grid-medium uk-text-small" style="margin-bottom:93px;">
+
+<div class="uk-width-1-5">
+    <a href=""><figure class="uk-overlay issue">
+        <img class="hub" src="http://www.ericarosset.com/uikit-2.26.2/images/issue-forest.jpg" width="" height="" alt="">
+        <div class="uk-overlay-panel uk-text-center uk-vertical-align">
+            <div class="uk-vertical-align-middle">
+                <h4 style="font-family:arvo; margin:0;">Forests <i style="font-size:14px;" class="uk-icon-angle-right"></i></h4>
+                </div>
+            </div>
+    </figure></a>
+</div>
+
+<div class="uk-width-1-5">
+    <a href=""><figure class="uk-overlay">
+        <img src="http://www.ericarosset.com/uikit-2.26.2/images/issue-climate.jpg" width="" height="" alt="">
+        <div class="uk-overlay-panel uk-text-center uk-vertical-align">
+            <div class="uk-vertical-align-middle">
+                <h4 style="font-family:arvo; margin:0;">Climate <i style="font-size:14px;" class="uk-icon-angle-right"></i></h4>
+                </div>
+            </div>
+    </figure></a>
+</div>
+
+<div class="uk-width-1-5">
+    <a href=""><figure class="uk-overlay">
+        <img src="http://www.ericarosset.com/uikit-2.26.2/images/issue-community.jpg" width="" height="" alt="">
+        <div class="uk-overlay-panel uk-text-center uk-vertical-align">
+            <div class="uk-vertical-align-middle">
+                <h4 style="font-family:arvo; margin:0;">Community <i style="font-size:14px;" class="uk-icon-angle-right"></i></h4>
+                </div>
+            </div>
+    </figure></a>
+</div>
+
+<div class="uk-width-1-5">
+    <a href=""><figure class="uk-overlay">
+        <img src="http://www.ericarosset.com/uikit-2.26.2/images/issue-wildlife.jpg" width="" height="" alt="">
+        <div class="uk-overlay-panel uk-text-center uk-vertical-align">
+            <div class="uk-vertical-align-middle">
+                <h4 style="font-family:arvo; margin:0;">Wildlife <i style="font-size:14px;" class="uk-icon-angle-right"></i></h4>
+                </div>
+            </div>
+    </figure></a>
+</div>
+
+<div class="uk-width-1-5">
+    <a href=""><figure class="uk-overlay">
+        <img src="http://www.ericarosset.com/uikit-2.26.2/images/issue-food.jpg" width="" height="" alt="">
+        <div class="uk-overlay-panel uk-text-center uk-vertical-align">
+            <div class="uk-vertical-align-middle">
+                <h4 style="font-family:arvo; margin:0;">Food <i style="font-size:14px;" class="uk-icon-angle-right"></i></h4>
+                </div>
+            </div>
+    </figure></a>
+</div>
+
+</div>
+
+
+            </div></div></body>
+    
+</div>
+</div>
+    </body>
+</html>
