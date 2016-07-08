@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Documentation layout example - UIkit documentation</title>
+        <link rel="stylesheet" href="http://ericarosset.com/uikit-2.26.2/css/uikit.custom.css" />
+        <link rel="stylesheet" href="http://ericarosset.com/uikit-2.26.2/css/components/sticky.css" />
+        <script src="http://getuikit.com/vendor/jquery.js"></script>
+        <script src="http://ericarosset.com/uikit-2.26.2/js/uikit.min.js"></script>
+        <script src="http://getuikit.com/src/js/components/sticky.js"></script>
+                <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>        
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic,300,300italic' rel='stylesheet' type='text/css'>     
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+<style>
+
+
+body { 
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-height:1000px;
+    background-repeat: repeat;
+}
+
+
+.uk-text-small {
+    font-size: 16px;
+    line-height: 22px;
+}
+.curve .uk-article-meta {
+    font-size: 14px;
+    line-height: 18px;
+    color: #a5a5a0;
+}
+.uk-panel-box .uk-panel-title {
+    padding-top:10px;
+}
+.uk-panel-box .uk-panel-badge {
+    top: 202px;
+    left: 0px;
+}
+.uk-badge {
+    padding:7px;
+}
+
+.uk-contrast  {
+  text-shadow:#000000 0em 0em .1em;
+}
+
+
+
+  
+
+
+/* a hover */ 
+
+a {
+   color: #544742;
+   text-decoration:underline;
+  -o-transition:all .3s ease-in-out;
+  -ms-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -webkit-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+}
+
+a:hover, a:focus, a:active {
+    text-transform: underline;
+    color:#f1735f;
+}
+
+p {
+  font-size:20px;
+}
+
+
+/* Fade */
+.hvr-fade {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+    color: #fff;
+}
+
+
+/* Buttons */
+
+.uk-button {
+    padding:0 30px;
+}
+
+.uk-button-link {
+    color: #f1735f;
+    border: 2px solid #f1735f;
+    border-radius: 10px;
+}
+
+.uk-button-link:hover, .uk-button-danger:hover  {
+    color: #cb333b; 
+    border: 2px solid #cb333b ; 
+    text-decoration:none;
+}
+
+.uk-button-success:hover {
+    background-color:#cb333b;
+}
+
+.uk-button-primary:hover {
+    background-color:#d5405d;
+}
+
+
+/* Icon Forward */
+.hvr-icon-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+ /* position: relative; 
+  padding-right: 2.2em;*/
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-icon-forward:before {
+  content: "\f054";
+  position: absolute;
+  right: 3em;
+  font-size: 14px;
+  margin-top: 6px;
+  /*padding: 0 1px;*/
+  font-family: FontAwesome;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-icon-forward:hover:before, .hvr-icon-forward:focus:before, .hvr-icon-forward:active:before {
+  -webkit-transform: translateX(4px);
+  transform: translateX(4px);
+}
+
+/* issue hub thumbnails    */
+
+.uk-overlay-panel, .uk-overlay-panel:focus, .uk-overlay-panel:active {
+  opacity: 1;
+  -o-transition:all .3s ease-in-out;
+  -ms-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -webkit-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+  background-color: rgba(0, 0, 0, .3);
+}
+.uk-overlay-panel:hover  {
+    opacity: 1;
+    background-color:#f1735f;
+    text-transform: none !important; 
+}
+.uk-overlay-panel h4:hover {
+    opacity: 1;
+}
+
+
+
+
+</style>
+    </head>
+
+
+
+<body style="background-color:#f5f3f2">
+
+
+<div class="uk-container uk-container-center">
+
+
+<h3>Hover Rules</h3>
+<ul>
+<li>Donate button hovers Guava: #d5405d.</li>
+<li>All other buttons & papaya highlight boxes hovers dark papaya: #cb333b. (See highlight box hover <a href="http://ericarosset.com/uikit-2.26.2/style-boxes.html">here</a>.)</li>
+
+<li>Body copy and all issue thumbnails hover to papaya: #544742</li>
+<li>Chevrons always animate right on hover. (placement would be relative to the text, to the right)</li>
+</ul><br><br>
+
+   <div class="uk-h3 uk-margin-top">Explore Another Issue</div><hr>
+            <div class="uk-grid uk-grid-medium uk-text-small" style="margin-bottom:93px;">
+
+<div class="uk-width-1-5">
+    <a href=""><figure class="uk-overlay">
+        <img class="hub" src="http://www.ericarosset.com/uikit-2.26.2/images/issue-forest.jpg" width="" height="" alt="">
+        <div class="uk-overlay-panel uk-text-center uk-vertical-align hvr-icon-forward" style="padding-top:81px;padding-left:0px;">
+            <div class="uk-vertical-align-middle">
+                <h4 style="font-family:arvo;">Forests</h4>
+                </div>
+            </div>
+    </figure></a>
+</div>
+
+<div class="uk-width-1-5">
+    <a href=""><figure class="uk-overlay">
+        <img src="http://www.ericarosset.com/uikit-2.26.2/images/issue-climate.jpg" width="" height="" alt="">
+        <div class="uk-overlay-panel uk-text-center uk-vertical-align hvr-icon-forward" style="padding-top:81px;padding-left:0px;">
+            <div class="uk-vertical-align-middle">
+                <h4 style="font-family:arvo;">Climate</h4>
+                </div>
+            </div>
+    </figure></a>
+</div>
+
+<div class="uk-width-1-5">
+    <a href=""><figure class="uk-overlay">
+        <img src="http://www.ericarosset.com/uikit-2.26.2/images/issue-community.jpg" width="" height="" alt="">
+        <div class="uk-overlay-panel uk-text-center uk-vertical-align hvr-icon-forward" style="padding-top:81px;padding-left:0px;">
+            <div class="uk-vertical-align-middle">
+                <h4 style="font-family:arvo;">Community</h4>
+                </div>
+            </div>
+    </figure></a>
+</div>
+
+<div class="uk-width-1-5">
+    <a href=""><figure class="uk-overlay">
+        <img src="http://www.ericarosset.com/uikit-2.26.2/images/issue-wildlife.jpg" width="" height="" alt="">
+        <div class="uk-overlay-panel uk-text-center uk-vertical-align hvr-icon-forward" style="padding-top:81px;padding-left:0px;">
+            <div class="uk-vertical-align-middle ">
+                <h4 class="" style="font-family:arvo;">Wildlife</h4>
+                </div>
+            </div>
+    </figure></a>
+</div>
+
+<div class="uk-width-1-5">
+    <a href=""><figure class="uk-overlay">
+        <img src="http://www.ericarosset.com/uikit-2.26.2/images/issue-food.jpg" width="" height="" alt="">
+        <div class="uk-overlay-panel uk-text-center uk-vertical-align hvr-icon-forward" style="padding-top:81px;padding-left:0px;">
+            <div class="uk-vertical-align-middle">
+                <h4 style="font-family:arvo;">Food</h4>
+                </div>
+            </div>
+    </figure></a>
+</div>
+
+</div>
+
+<div class="uk-width-1-1" data-uk-margin="">
+
+               
+                   
+<button class="uk-button uk-button-primary hvr-fade">DONATE</button>
+<button class="uk-button uk-button-success hvr-fade">SUBSCRIBE</button>
+<button class="uk-button uk-button-danger hvr-fade">LOAD MORE</button>  
+<button class="uk-button uk-button-link hvr-fade">LEARN MORE</button>
+
+
+
+</div>
+
+<div class="uk-grid">
+<div class="uk-width-1-2 uk-margin-large-top" style="background:#fff; data-uk-margin="">
+<p>To help make sustainable palm oil the norm and <a href="http://www.rainforest-alliance.org/publications/sustainable-palm-oil-brochure" target="_blank">support those palm oil traders, manufacturers, and retailers who adopt sustainable practices</a>, the Rainforest Alliance collaborates with international organizations such as the <a href="http://www.rspo.org/" target="_blank">Roundtable on Sustainable Palm Oil</a>, the <a href="http://www.tfa2020.org" target="_blank">Tropical Forest Alliance 2020</a>, and <a href="http://www.theconsumergoodsforum.com/sustainability-about-pillar" target="_blank">The Consumer Goods Forum</a>&#8203;. The SAN standard for Rainforest Alliance Certified palm oil has been endorsed by the <a href="http://www.theconsumergoodsforum.com/sustainability-about-pillar" target="_blank">The Consumer Goods Forum</a>&#8203; and the <a href="http://www.huiledepalmedurable.org/?lang=en" target="_blank">French Alliance for Sustainable Palm Oil</a>. We also strive to raise industry awareness by publishing research and position papers on <a href="http://www.rainforest-alliance.org/documents/biofuels_policy.pdf" target="_blank">biofuels</a> &#8203;and <a href="http://www.rainforest-alliance.org/publications/halting-deforestation-achieving-sustainability">deforestation</a> in the palm oil sector, and we will continue to engage with industry, civil society organizations, and consumer groups to multiply the impacts of our work. If you are a business and would like to work with us please <a href="http://www.rainforest-alliance.org/business" target="_blank">click here</a>.</p>
+</div>
+<div class="uk-width-1-2 uk-margin-large-top" data-uk-margin="">
+<p>To help make sustainable palm oil the norm and <a href="http://www.rainforest-alliance.org/publications/sustainable-palm-oil-brochure" target="_blank">support those palm oil traders, manufacturers, and retailers who adopt sustainable practices</a>, the Rainforest Alliance collaborates with international organizations such as the <a href="http://www.rspo.org/" target="_blank">Roundtable on Sustainable Palm Oil</a>, the <a href="http://www.tfa2020.org" target="_blank">Tropical Forest Alliance 2020</a>, and <a href="http://www.theconsumergoodsforum.com/sustainability-about-pillar" target="_blank">The Consumer Goods Forum</a>&#8203;. The SAN standard for Rainforest Alliance Certified palm oil has been endorsed by the <a href="http://www.theconsumergoodsforum.com/sustainability-about-pillar" target="_blank">The Consumer Goods Forum</a>&#8203; and the <a href="http://www.huiledepalmedurable.org/?lang=en" target="_blank">French Alliance for Sustainable Palm Oil</a>. We also strive to raise industry awareness by publishing research and position papers on <a href="http://www.rainforest-alliance.org/documents/biofuels_policy.pdf" target="_blank">biofuels</a> &#8203;and <a href="http://www.rainforest-alliance.org/publications/halting-deforestation-achieving-sustainability">deforestation</a> in the palm oil sector, and we will continue to engage with industry, civil society organizations, and consumer groups to multiply the impacts of our work. If you are a business and would like to work with us please <a href="http://www.rainforest-alliance.org/business" target="_blank">click here</a>.</p>
+</div>
+</div>
+</div>
+            </body>
+    
+</div>
+</div>
+    </body>
+</html>
