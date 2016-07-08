@@ -166,7 +166,7 @@ div.uk-panel.uk-panel-box.highlight img {
     transition:all .3s ease-in-out;
 }
 div.uk-panel.uk-panel-box.highlight div.uk-panel-box.curve.highlight:hover  { 
-    background-color:#f49383 !important; 
+    background-color: #cb333b !important; 
     text-decoration:none; 
     color:#fff;
 }
@@ -174,6 +174,76 @@ div.uk-panel.uk-panel-box.highlight img:hover {
     opacity: .8;
     background-color:#544742;
 }
+
+/* Icon Forward */
+.hvr-icon-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+ /* position: relative; 
+  padding-right: 2.2em;*/
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-icon-forward:before {
+  content: "\f054";
+  position: absolute;
+  right: 3em;
+  font-size: 14px;
+  margin-top: 6px;
+  /*padding: 0 1px;*/
+  font-family: FontAwesome;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-icon-forward:hover:before, .hvr-icon-forward:focus:before, .hvr-icon-forward:active:before {
+  -webkit-transform: translateX(4px);
+  transform: translateX(4px);
+}
+
+/* Icon Forward - Highlight boxes*/
+
+.highlight-forward:before {
+  content: "\f054";
+  position: absolute;
+  right: 5.5em;
+  margin-top: 42px;
+}
+
+
+/* issue hub thumbnails    */
+
+.uk-overlay-panel, .uk-overlay-panel:focus, .uk-overlay-panel:active {
+  opacity: 1;
+  -o-transition:all .3s ease-in-out;
+  -ms-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -webkit-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+  background-color: rgba(0, 0, 0, .3);
+}
+.uk-overlay-panel:hover  {
+    opacity: 1;
+    background-color:#f1735f;
+    text-transform: none !important; 
+}
+.uk-overlay-panel h4:hover {
+    opacity: 1;
+}
+
+
+
 
 /* LATEST & RELATED BOX */   
 
@@ -271,29 +341,6 @@ div.uk-panel.uk-panel-box.small .uk-panel-title {
 .ctaLarge .uk-article-title {
   font-size: 37px;
   line-height: 47px;
-}
-
-/* issue hub thumbnails */   
-
-.uk-overlay-panel {
-   background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
-      opacity: 1;
-  -o-transition:all .3s ease-in-out;
-  -ms-transition:all .3s ease-in-out;
-  -moz-transition:all .3s ease-in-out;
-  -webkit-transition:all .3s ease-in-out;
-  transition:all .3s ease-in-out;
-}
-
-.uk-overlay-panel:hover {
-    opacity: .8;
-    text-transform: none !important;
-}
-
-
-.uk-overlay-panel h4:hover {
-    opacity: 1;
-    
 }
 
 
@@ -469,9 +516,9 @@ div.uk-panel.uk-panel-box.small .uk-panel-title {
                 </a>
             </div>
             <a href="#"">
-                <div class="uk-panel-box curve highlight">
+                <div class="uk-panel-box curve highlight hvr-icon-forward highlight-forward">
                     <h4 class="uk-panel-title">
-                        Climate-Smart Agriculture 101 <i style="font-size:14px;"class="uk-icon-angle-right" ></i>
+                        Climate-Smart Agriculture 101
                     </h4>
                     <div class="uk-text-small">
                        In our training programs, farmers learn how to decrease greenhouse gas emissions, improve soil health, boost the productivity of their land, and protect forests and wildlife.
@@ -488,9 +535,9 @@ div.uk-panel.uk-panel-box.small .uk-panel-title {
                 </a>
             </div>
             <a href="#"">
-                <div class="uk-panel-box curve highlight">
+                <div class="uk-panel-box curve highlight hvr-icon-forward highlight-forward">
                     <h4 class="uk-panel-title">
-                        Forest Communities Earn Revenue for Fighting Climate Change <i style="font-size:14px;"class="uk-icon-angle-right" ></i>
+                        Forest Communities Earn Revenue for Fighting Climate Change
                     </h4>
                     <div class="uk-text-small">
                         By protecting forests and planting trees, communities create "carbon sinks" that help slow climate change. With third-party verification, they can sell carbon credits on the international market.
@@ -507,9 +554,9 @@ div.uk-panel.uk-panel-box.small .uk-panel-title {
                 </a>
             </div>
             <a href="#"">
-                <div class="uk-panel-box curve highlight">
+                <div class="uk-panel-box curve highlight hvr-icon-forward highlight-forward">
                     <h4 class="uk-panel-title">
-                        Deforestation and Emissions 101  <i style="font-size:14px;"class="uk-icon-angle-right" ></i>
+                        Deforestation and Emissions 101
                     </h4>
                     <div class="uk-text-small">
                         Forests are our most powerful tool for storing carbon. Here's a simple primer on the mechanics of deforestation and carbon sequestration.
@@ -768,11 +815,11 @@ div.uk-panel.uk-panel-box.small .uk-panel-title {
             <div class="uk-grid uk-grid-medium uk-text-small" style="margin-bottom:93px;">
 
 <div class="uk-width-1-5">
-    <a href=""><figure class="uk-overlay issue">
+    <a href=""><figure class="uk-overlay">
         <img class="hub" src="http://www.ericarosset.com/uikit-2.26.2/images/issue-forest.jpg" width="" height="" alt="">
-        <div class="uk-overlay-panel uk-text-center uk-vertical-align">
+        <div class="uk-overlay-panel uk-text-center uk-vertical-align hvr-icon-forward" style="padding-top:81px;padding-left:0px;">
             <div class="uk-vertical-align-middle">
-                <h4 style="font-family:arvo; margin:0;">Forests <i style="font-size:14px;" class="uk-icon-angle-right"></i></h4>
+                <h4 style="font-family:arvo;">Forests</h4>
                 </div>
             </div>
     </figure></a>
@@ -781,9 +828,9 @@ div.uk-panel.uk-panel-box.small .uk-panel-title {
 <div class="uk-width-1-5">
     <a href=""><figure class="uk-overlay">
         <img src="http://www.ericarosset.com/uikit-2.26.2/images/issue-climate.jpg" width="" height="" alt="">
-        <div class="uk-overlay-panel uk-text-center uk-vertical-align">
+        <div class="uk-overlay-panel uk-text-center uk-vertical-align hvr-icon-forward" style="padding-top:81px;padding-left:0px;">
             <div class="uk-vertical-align-middle">
-                <h4 style="font-family:arvo; margin:0;">Climate <i style="font-size:14px;" class="uk-icon-angle-right"></i></h4>
+                <h4 style="font-family:arvo;">Climate</h4>
                 </div>
             </div>
     </figure></a>
@@ -792,9 +839,9 @@ div.uk-panel.uk-panel-box.small .uk-panel-title {
 <div class="uk-width-1-5">
     <a href=""><figure class="uk-overlay">
         <img src="http://www.ericarosset.com/uikit-2.26.2/images/issue-community.jpg" width="" height="" alt="">
-        <div class="uk-overlay-panel uk-text-center uk-vertical-align">
+        <div class="uk-overlay-panel uk-text-center uk-vertical-align hvr-icon-forward" style="padding-top:81px;padding-left:0px;">
             <div class="uk-vertical-align-middle">
-                <h4 style="font-family:arvo; margin:0;">Community <i style="font-size:14px;" class="uk-icon-angle-right"></i></h4>
+                <h4 style="font-family:arvo;">Community</h4>
                 </div>
             </div>
     </figure></a>
@@ -803,9 +850,9 @@ div.uk-panel.uk-panel-box.small .uk-panel-title {
 <div class="uk-width-1-5">
     <a href=""><figure class="uk-overlay">
         <img src="http://www.ericarosset.com/uikit-2.26.2/images/issue-wildlife.jpg" width="" height="" alt="">
-        <div class="uk-overlay-panel uk-text-center uk-vertical-align">
-            <div class="uk-vertical-align-middle">
-                <h4 style="font-family:arvo; margin:0;">Wildlife <i style="font-size:14px;" class="uk-icon-angle-right"></i></h4>
+        <div class="uk-overlay-panel uk-text-center uk-vertical-align hvr-icon-forward" style="padding-top:81px;padding-left:0px;">
+            <div class="uk-vertical-align-middle ">
+                <h4 class="" style="font-family:arvo;">Wildlife</h4>
                 </div>
             </div>
     </figure></a>
@@ -814,9 +861,9 @@ div.uk-panel.uk-panel-box.small .uk-panel-title {
 <div class="uk-width-1-5">
     <a href=""><figure class="uk-overlay">
         <img src="http://www.ericarosset.com/uikit-2.26.2/images/issue-food.jpg" width="" height="" alt="">
-        <div class="uk-overlay-panel uk-text-center uk-vertical-align">
+        <div class="uk-overlay-panel uk-text-center uk-vertical-align hvr-icon-forward" style="padding-top:81px;padding-left:0px;">
             <div class="uk-vertical-align-middle">
-                <h4 style="font-family:arvo; margin:0;">Food <i style="font-size:14px;" class="uk-icon-angle-right"></i></h4>
+                <h4 style="font-family:arvo;">Food</h4>
                 </div>
             </div>
     </figure></a>
