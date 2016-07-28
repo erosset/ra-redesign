@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
 <html lang="en-gb" dir="ltr">
-
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,8 +10,10 @@
         <script src="http://getuikit.com/vendor/jquery.js"></script>
         <script src="http://ericarosset.com/uikit-2.26.2/js/uikit.min.js"></script>
         <script src="http://getuikit.com/src/js/components/sticky.js"></script>
-        <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic,300,300italic' rel='stylesheet' type='text/css'>
+        <script src="https://use.typekit.net/vdh6zpj.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>        
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic,300,300italic' rel='stylesheet' type='text/css'>     
         <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
 <style>
@@ -23,6 +24,100 @@
 em {
     color:inherit;
 }
+
+/* issue hub thumbnails    */
+
+.uk-overlay-panel, .uk-overlay-background, .uk-overlay-panel:focus, .uk-overlay-panel:active {
+  opacity: 1;
+  -o-transition:all .3s ease-in-out;
+  -ms-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -webkit-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+  background-color: #f1735f;
+  padding-top:80px;
+  border-bottom:2px solid;
+}
+.uk-overlay-panel:hover  {
+    opacity: 1;
+    background-color:#f1735f;
+    text-transform: none !important; 
+}
+.uk-overlay-panel h4:hover {
+    opacity: 1;
+}
+
+.uk-panel-box .uk-panel-profile a {
+    color:#fff;
+}
+
+.uk-panel-box-primary {padding:0;}
+
+/* Icon Forward */
+.hvr-icon-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+ /* position: relative; 
+  padding-right: 2.2em;*/
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-icon-forward:before {
+  content: "\f054";
+  position: absolute;
+  right: 2.5em;
+  font-size: 14px;
+  margin-top: 3px;
+  /*padding: 0 1px;*/
+  font-family: FontAwesome;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-icon-forward:hover:before, .hvr-icon-forward:focus:before, .hvr-icon-forward:active:before {
+  -webkit-transform: translateX(4px);
+  transform: translateX(4px);
+}
+
+.uk-button-dropdown {
+    border:0;
+}
+
+em {
+    color:inherit;
+}
+
+.uk-dropdown-bottom
+{top: 30px; left: 0px}
+
+.uk-dropdown {
+    padding: 15px;
+    background: #f5f3f2;
+    border: 1px solid #d9d9d6;
+    border-top-color:#f5f3f2;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #544742;
+    font-size: 18px;
+    vertical-align: top;
+    top:35px !important;
+}
+
+.uk-nav-dropdown > li > a:hover, .uk-nav-dropdown > li > a:focus {
+    background-color:#544742;
+}
+
 </style>
 
     </head>
@@ -34,7 +129,7 @@ em {
 
 
 
-<div class="uk-cover-background uk-position-relative" style="height: 510px; background-image: url(http://www.rainforest-alliance.org/sites/default/files/styles/responsive_breakpoints_theme_rainforest_wide_1x/public/slideshow/header/poison-dart-frog.jpg);">
+<div class="uk-cover-background uk-position-relative" style="height: 510px; background-image: url(http://www.ericarosset.com/uikit-2.26.2/seal-generic.jpg);">
 
     <div class="uk-cover-background uk-grid">
 
@@ -68,7 +163,7 @@ em {
 <nav class="uk-navbar uk-vertical-align" style="height:75px;" >
 
                                 <div class="uk-button-dropdown uk-margin-left" data-uk-dropdown="{mode:'click'}">
-                                    <button class="uk-button">Category&nbsp;&nbsp;<i class="uk-icon-caret-down"></i></button>
+                                    <button class="uk-button">Category&nbsp;&nbsp;<i class="uk-icon-chevron-down"></i></button>
                                     <div class="uk-dropdown">
                                         <ul class="uk-nav uk-nav-dropdown">
                                             <li><a href="#">Building Materials</a></li>
@@ -83,7 +178,7 @@ em {
                                     </div>
                                 </div>
                                 <div class="uk-button-dropdown uk-margin-right uk-margin-left" data-uk-dropdown="{mode:'click'}">
-                                    <button class="uk-button" disabled>Product &nbsp;&nbsp;<i class="uk-icon-caret-down"></i></button>
+                                    <button class="uk-button"  disabled>Product &nbsp;&nbsp;<i class="uk-icon-chevron-down"></i></button>
                                     <div class="uk-dropdown">
                                         <ul class="uk-nav uk-nav-dropdown">
                                             <li><a href="#">Bananas</a></li>
@@ -96,7 +191,7 @@ em {
                                     </div>
                                 </div>
                                 <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
-                                    <button class="uk-button">Location&nbsp;&nbsp;<i class="uk-icon-caret-down"></i></button>
+                                    <button class="uk-button" >Location&nbsp;&nbsp;<i class="uk-icon-chevron-down"></i></button>
                                     <div class="uk-dropdown">
                                         <ul class="uk-nav uk-nav-dropdown">
                                             <li><a href="#">Current Location&nbsp;&nbsp;<i class="uk-icon-location-arrow"></i></a></li>
@@ -128,10 +223,10 @@ Sort by: Recently Added - <a href="#">A-Z &nbsp;&nbsp;<i class="uk-icon-arrow-up
         <div class="uk-panel uk-panel-box uk-panel-box-primary profile">
 
                                 <figure class="uk-overlay uk-overlay-hover">
-                                    <img src="http://placehold.it/500x500" alt="Image">
+                                    <img src="http://www.ericarosset.com/uikit-2.26.2/images/logo-test1.jpg" style="padding:15px;" alt="Image">
                                     <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
-                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-caret-right"></i></a></h4>
-                                        <p>Product: Coffee</p>
+                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-chevron-right"></i></a></h4>
+                                        <p><em>Coffee</em></p>
                                     </div>
                                     <a class="uk-position-cover" href="#"></a>
                                 </figure>
@@ -141,10 +236,10 @@ Sort by: Recently Added - <a href="#">A-Z &nbsp;&nbsp;<i class="uk-icon-arrow-up
         <div class="uk-panel uk-panel-box uk-panel-box-primary profile">
 
                                 <figure class="uk-overlay uk-overlay-hover">
-                                    <img src="http://placehold.it/500x500" alt="Image">
+                                    <img src="http://www.ericarosset.com/uikit-2.26.2/images/logo-test2.jpg" style="padding:15px;"  alt="Image">
                                     <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
-                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-caret-right"></i></a></h4>
-                                        <p>Product: Coffee</p>
+                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-chevron-right"></i></a></h4>
+                                        <p><em>Coffee</em></p>
                                     </div>
                                     <a class="uk-position-cover" href="#"></a>
                                 </figure>
@@ -153,21 +248,23 @@ Sort by: Recently Added - <a href="#">A-Z &nbsp;&nbsp;<i class="uk-icon-arrow-up
         <div class="uk-panel uk-panel-box uk-panel-box-primary profile">
 
                                 <figure class="uk-overlay uk-overlay-hover">
-                                    <img src="http://placehold.it/500x500" alt="Image">
-                                    <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
-                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-caret-right"></i></a></h4>
-                                        <p>Product: Coffee</p>
+                                    <img src="http://www.ericarosset.com/uikit-2.26.2/images/logo-test3.jpg"  style="padding:15px;" alt="Image">
+                                    <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left hvr-icon-forward">
+                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee</a></h4>
+                                        <p><em>Coffee</em></p>
                                     </div>
                                     <a class="uk-position-cover" href="#"></a>
                                 </figure>
         </div>
-    </div>  <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-margin-large-bottom uk-text-center">
+    </div>  
+
+<div class="uk-width-medium-1-4 uk-width-small-1-1 uk-margin-large-bottom uk-text-center">
 
 
-<div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-secondary" style="border-radius:10px;">
+<div class="uk-panel uk-panel-space uk-panel-box uk-panel-box-secondary" style="/* border-radius:10px; */padding: 48px;border-bottom: 2px solid #544742;">
  <form class="uk-form">
  <h3 class="uk-text-small">Soft-ask CTA for something STF related, could be donate or more info</h3>
-    <fieldset data-uk-margin>
+    <fieldset data-uk-margin="">
        <!-- <input type="text" placeholder="Email Address">-->
         <button class="uk-button uk-button-success">Action</button>  
     </fieldset>
@@ -175,13 +272,61 @@ Sort by: Recently Added - <a href="#">A-Z &nbsp;&nbsp;<i class="uk-icon-arrow-up
 </form>
      </div>
 
+    </div> <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-margin-large-bottom uk-text-center">
+        <div class="uk-panel uk-panel-box uk-panel-box-primary profile">
+
+                                <figure class="uk-overlay uk-overlay-hover">
+                                    <img src="http://www.ericarosset.com/uikit-2.26.2/images/logo-test4.jpg" style="padding:15px;"  alt="Image">
+                                    <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
+                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-chevron-right"></i></a></h4>
+                                        <p><em>Coffee</em></p>
+                                    </div>
+                                    <a class="uk-position-cover" href="#"></a>
+                                </figure>
+        </div>
+    </div>  <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-margin-large-bottom uk-text-center">
+        <div class="uk-panel uk-panel-box uk-panel-box-primary profile">
+
+                                <figure class="uk-overlay uk-overlay-hover">
+                                    <img src="http://www.ericarosset.com/uikit-2.26.2/images/logo-test1.jpg" style="padding:15px;"  alt="Image">
+                                    <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
+                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-chevron-right"></i></a></h4>
+                                        <p><em>Coffee, Tea, Bananas</em></p>
+                                    </div>
+                                    <a class="uk-position-cover" href="#"></a>
+                                </figure>
+        </div>
+    </div>  <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-margin-large-bottom uk-text-center">
+        <div class="uk-panel uk-panel-box uk-panel-box-primary profile">
+
+                                <figure class="uk-overlay uk-overlay-hover">
+                                    <img src="http://www.ericarosset.com/uikit-2.26.2/images/logo-test2.jpg" style="padding:15px;"   alt="Image">
+                                    <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
+                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-chevron-right"></i></a></h4>
+                                        <p><em>Coffee</em></p>
+                                    </div>
+                                    <a class="uk-position-cover" href="#"></a>
+                                </figure>
+        </div>
+    </div>  <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-margin-large-bottom uk-text-center">
+        <div class="uk-panel uk-panel-box uk-panel-box-primary profile">
+
+                                <figure class="uk-overlay uk-overlay-hover">
+                                    <img src="http://www.ericarosset.com/uikit-2.26.2/images/logo-test3.jpg" style="padding:15px;"  alt="Image">
+                                    <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
+                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-chevron-right"></i></a></h4>
+                                        <p><em>Coffee</em></p>
+                                    </div>
+                                    <a class="uk-position-cover" href="#"></a>
+                                </figure>
+        </div>
     </div>  <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-margin-large-bottom uk-text-center">
         <div class="uk-panel uk-panel-box uk-panel-box-primary profile">
 
                                 <figure class="uk-overlay uk-overlay-hover">
                                     <img src="http://placehold.it/500x500" alt="Image">
                                     <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
-                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-caret-right"></i></a></h4>
+                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-chevron-right"></i></a></h4>
                                         <p>Product: Coffee</p>
                                     </div>
                                     <a class="uk-position-cover" href="#"></a>
@@ -193,7 +338,7 @@ Sort by: Recently Added - <a href="#">A-Z &nbsp;&nbsp;<i class="uk-icon-arrow-up
                                 <figure class="uk-overlay uk-overlay-hover">
                                     <img src="http://placehold.it/500x500" alt="Image">
                                     <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
-                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-caret-right"></i></a></h4>
+                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-chevron-right"></i></a></h4>
                                         <p>Product: Coffee</p>
                                     </div>
                                     <a class="uk-position-cover" href="#"></a>
@@ -205,7 +350,7 @@ Sort by: Recently Added - <a href="#">A-Z &nbsp;&nbsp;<i class="uk-icon-arrow-up
                                 <figure class="uk-overlay uk-overlay-hover">
                                     <img src="http://placehold.it/500x500" alt="Image">
                                     <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
-                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-caret-right"></i></a></h4>
+                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-chevron-right"></i></a></h4>
                                         <p>Product: Coffee</p>
                                     </div>
                                     <a class="uk-position-cover" href="#"></a>
@@ -217,7 +362,7 @@ Sort by: Recently Added - <a href="#">A-Z &nbsp;&nbsp;<i class="uk-icon-arrow-up
                                 <figure class="uk-overlay uk-overlay-hover">
                                     <img src="http://placehold.it/500x500" alt="Image">
                                     <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
-                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-caret-right"></i></a></h4>
+                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-chevron-right"></i></a></h4>
                                         <p>Product: Coffee</p>
                                     </div>
                                     <a class="uk-position-cover" href="#"></a>
@@ -229,7 +374,7 @@ Sort by: Recently Added - <a href="#">A-Z &nbsp;&nbsp;<i class="uk-icon-arrow-up
                                 <figure class="uk-overlay uk-overlay-hover">
                                     <img src="http://placehold.it/500x500" alt="Image">
                                     <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
-                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-caret-right"></i></a></h4>
+                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-chevron-right"></i></a></h4>
                                         <p>Product: Coffee</p>
                                     </div>
                                     <a class="uk-position-cover" href="#"></a>
@@ -241,7 +386,7 @@ Sort by: Recently Added - <a href="#">A-Z &nbsp;&nbsp;<i class="uk-icon-arrow-up
                                 <figure class="uk-overlay uk-overlay-hover">
                                     <img src="http://placehold.it/500x500" alt="Image">
                                     <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
-                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-caret-right"></i></a></h4>
+                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-chevron-right"></i></a></h4>
                                         <p>Product: Coffee</p>
                                     </div>
                                     <a class="uk-position-cover" href="#"></a>
@@ -253,7 +398,7 @@ Sort by: Recently Added - <a href="#">A-Z &nbsp;&nbsp;<i class="uk-icon-arrow-up
                                 <figure class="uk-overlay uk-overlay-hover">
                                     <img src="http://placehold.it/500x500" alt="Image">
                                     <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
-                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-caret-right"></i></a></h4>
+                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-chevron-right"></i></a></h4>
                                         <p>Product: Coffee</p>
                                     </div>
                                     <a class="uk-position-cover" href="#"></a>
@@ -265,7 +410,7 @@ Sort by: Recently Added - <a href="#">A-Z &nbsp;&nbsp;<i class="uk-icon-arrow-up
                                 <figure class="uk-overlay uk-overlay-hover">
                                     <img src="http://placehold.it/500x500" alt="Image">
                                     <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
-                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-caret-right"></i></a></h4>
+                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-chevron-right"></i></a></h4>
                                         <p>Product: Coffee</p>
                                     </div>
                                     <a class="uk-position-cover" href="#"></a>
@@ -277,7 +422,7 @@ Sort by: Recently Added - <a href="#">A-Z &nbsp;&nbsp;<i class="uk-icon-arrow-up
                                 <figure class="uk-overlay uk-overlay-hover">
                                     <img src="http://placehold.it/500x500" alt="Image">
                                     <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
-                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-caret-right"></i></a></h4>
+                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-chevron-right"></i></a></h4>
                                         <p>Product: Coffee</p>
                                     </div>
                                     <a class="uk-position-cover" href="#"></a>
@@ -289,7 +434,7 @@ Sort by: Recently Added - <a href="#">A-Z &nbsp;&nbsp;<i class="uk-icon-arrow-up
                                 <figure class="uk-overlay uk-overlay-hover">
                                     <img src="http://placehold.it/500x500" alt="Image">
                                     <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
-                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-caret-right"></i></a></h4>
+                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-chevron-right"></i></a></h4>
                                         <p>Product: Coffee</p>
                                     </div>
                                     <a class="uk-position-cover" href="#"></a>
@@ -301,7 +446,7 @@ Sort by: Recently Added - <a href="#">A-Z &nbsp;&nbsp;<i class="uk-icon-arrow-up
                                 <figure class="uk-overlay uk-overlay-hover">
                                     <img src="http://placehold.it/500x500" alt="Image">
                                     <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
-                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-caret-right"></i></a></h4>
+                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-chevron-right"></i></a></h4>
                                         <p>Product: Coffee</p>
                                     </div>
                                     <a class="uk-position-cover" href="#"></a>
@@ -313,7 +458,7 @@ Sort by: Recently Added - <a href="#">A-Z &nbsp;&nbsp;<i class="uk-icon-arrow-up
                                 <figure class="uk-overlay uk-overlay-hover">
                                     <img src="http://placehold.it/500x500" alt="Image">
                                     <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
-                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-caret-right"></i></a></h4>
+                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-chevron-right"></i></a></h4>
                                         <p>Product: Coffee</p>
                                     </div>
                                     <a class="uk-position-cover" href="#"></a>
@@ -325,55 +470,7 @@ Sort by: Recently Added - <a href="#">A-Z &nbsp;&nbsp;<i class="uk-icon-arrow-up
                                 <figure class="uk-overlay uk-overlay-hover">
                                     <img src="http://placehold.it/500x500" alt="Image">
                                     <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
-                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-caret-right"></i></a></h4>
-                                        <p>Product: Coffee</p>
-                                    </div>
-                                    <a class="uk-position-cover" href="#"></a>
-                                </figure>
-        </div>
-    </div>  <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-margin-large-bottom uk-text-center">
-        <div class="uk-panel uk-panel-box uk-panel-box-primary profile">
-
-                                <figure class="uk-overlay uk-overlay-hover">
-                                    <img src="http://placehold.it/500x500" alt="Image">
-                                    <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
-                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-caret-right"></i></a></h4>
-                                        <p>Product: Coffee</p>
-                                    </div>
-                                    <a class="uk-position-cover" href="#"></a>
-                                </figure>
-        </div>
-    </div>  <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-margin-large-bottom uk-text-center">
-        <div class="uk-panel uk-panel-box uk-panel-box-primary profile">
-
-                                <figure class="uk-overlay uk-overlay-hover">
-                                    <img src="http://placehold.it/500x500" alt="Image">
-                                    <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
-                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-caret-right"></i></a></h4>
-                                        <p>Product: Coffee</p>
-                                    </div>
-                                    <a class="uk-position-cover" href="#"></a>
-                                </figure>
-        </div>
-    </div>  <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-margin-large-bottom uk-text-center">
-        <div class="uk-panel uk-panel-box uk-panel-box-primary profile">
-
-                                <figure class="uk-overlay uk-overlay-hover">
-                                    <img src="http://placehold.it/500x500" alt="Image">
-                                    <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
-                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-caret-right"></i></a></h4>
-                                        <p>Product: Coffee</p>
-                                    </div>
-                                    <a class="uk-position-cover" href="#"></a>
-                                </figure>
-        </div>
-    </div>  <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-margin-large-bottom uk-text-center">
-        <div class="uk-panel uk-panel-box uk-panel-box-primary profile">
-
-                                <figure class="uk-overlay uk-overlay-hover">
-                                    <img src="http://placehold.it/500x500" alt="Image">
-                                    <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
-                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-caret-right"></i></a></h4>
+                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-chevron-right"></i></a></h4>
                                         <p>Product: Coffee</p>
                                     </div>
                                     <a class="uk-position-cover" href="#"></a>
@@ -386,7 +483,7 @@ Sort by: Recently Added - <a href="#">A-Z &nbsp;&nbsp;<i class="uk-icon-arrow-up
                                 <figure class="uk-overlay uk-overlay-hover">
                                     <img src="http://placehold.it/500x500" alt="Image">
                                     <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background uk-text-left">
-                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-caret-right"></i></a></h4>
+                                       <h4 class="uk-panel-profile"><a class="uk-panel-profile" href="#">Costa Coffee&nbsp;&nbsp;<i class="uk-icon-chevron-right"></i></a></h4>
                                         <p>Product: Coffee</p>
                                     </div>
                                     <a class="uk-position-cover" href="#"></a>
